@@ -1,4 +1,4 @@
-![image](images/green+orange-full-color_lrg.jpg) 
+![logo](logo/green+orange-full-color_lrg.jpg) 
 
 # The State of AI Governance Research
 ### AI safety and reliability in real world commercial deployment
