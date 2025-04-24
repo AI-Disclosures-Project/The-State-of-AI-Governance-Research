@@ -103,6 +103,13 @@ risk_areas <- list(
     "\\bcopyright law\\b|",
     "\\bC2PA\\b|",
     "\\bContent Authenticity Initiative\\b"
+  ),
+  Accuracy = paste0(
+    "\\bhallucination(?:s)?\\b|",
+    "\\bcoding errors?\\b|",
+    "\\bcoding inaccuracy(?:s)?\\b|",
+    "\\bfactual inaccuracy(?:s)?\\b|",
+    "\\bfactual errors?\\b"
   )
 )
 
