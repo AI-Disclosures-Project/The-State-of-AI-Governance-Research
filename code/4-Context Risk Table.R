@@ -1,6 +1,10 @@
 ### CONTEXT AND RISKS TABLE ###
-setwd("/Users/Ilan/Desktop/Ilan Folder/2024/NYC AI/Papers/2024/Gaps/research/second version")
+setwd("~/Desktop/Ilan Folder/2024/NYC AI/Papers/Gaps/Gaps/research/Second version - KEY")
 data <- read.csv("data_merged_classified_deduplicated_FINAL.csv", stringsAsFactors = FALSE)
+
+
+library(dplyr)
+library(tidyverse)
 
 #Descriptive table 1
 data %>% group_by(institution_group, not_ai_safety) %>% 
@@ -88,10 +92,13 @@ risk_areas <- list(
     "\\bfinancial\\b"
   ),
   Behavioral = paste0(
-    "\\bsycophant(?:ic|s)?\\b|",
-    "\\bpersuasion(?:s)?\\b|",
-    "\\bpersuasive\\b|",
-    "\\breward[- ]hacking\\b"
+    "\\bsycophant(?:ic|s)?\\b|",      # sycophantic, sycophants
+    "\\bsycophancy\\b|",              # sycophancy
+    "\\bpersuasion(?:s)?\\b|",        # persuasion, persuasions
+    "\\bpersuasive\\b|",              # persuasive
+    "\\breward[- ]hacking\\b|",       # reward-hacking or reward hacking
+    "\\baddiction\\b|",               # addiction
+    "\\baddictive\\b"                 # addictive
   ),
   Copyright = paste0(
     "\\baccess violation(?:s)?\\b|",  
